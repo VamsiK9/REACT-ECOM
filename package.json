@@ -1,0 +1,15 @@
+{
+  "name": "ecommerce-project-react",
+  "version": "1.0.0",
+  "description": "MERN Stack E-commerce Project",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "client": "npm run dev --prefix client",
+    "server": "npm run server --prefix server",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
